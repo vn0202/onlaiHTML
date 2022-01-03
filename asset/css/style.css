@@ -1,0 +1,379 @@
+/*reset css*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    height: 48px;
+    width: 100%;
+    background-color: #000;
+    z-index: 1;
+    
+}
+.header .nav .nav_section{
+    position: relative;
+    display: inline-block;
+    padding: 0px 24px;
+    line-height: 48px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav .nav_section>a{
+    text-decoration: none;
+    color: white;
+    line-height: 48px;
+    
+  
+}
+.nav .nav_section:hover {
+    background-color: #ccc;
+    
+}
+.nav .nav_section:hover a{
+    color: black;
+}
+
+
+.header .sub-nav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    
+    color: black;
+    list-style: none;
+    text-transform: none;
+    min-width: 150px;
+    left: 0px;
+    top:48px
+}
+
+.header .sub-nav li{
+    line-height: 40px;
+    padding: 0px 8px;
+}
+.header .sub-nav li:hover{
+    background-color: #ccc;
+}
+.header .nav_section:hover .sub-nav{
+    display: block;
+}
+.header .search{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    color: white;
+    line-height: 48px;
+    padding: 0px 16px;
+}
+.header .search:hover{
+    background-color: tomato;
+}
+
+
+.slider{
+   margin-top: 48px;
+   
+}
+.slider img{
+    width: 100%;
+}
+.slider .text-describe{
+   position: relative;
+   bottom: 100px;
+   color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slider .text-describe .heading{
+    padding-bottom: 32px;
+    font-weight: 300;
+}
+
+
+.container .about{
+    width: 800px;
+    min-height: 400px;
+    margin:0px auto;
+    padding: 64px 16px;
+    text-align: center;
+}
+.container .heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.container .sub-heading{
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0px;
+}
+.container .describe{
+    text-align: justify;
+    line-height: 18px;
+}
+.container .about .img-members{
+    display: flex;
+    padding: 32px 0px;
+}
+.container .img-members .img-member{
+    margin:15px 0px;
+}
+.img-members .name{
+    margin: 10px 0px;
+}
+.container .img-members img{
+    width: 70%;
+    box-shadow:  0 4px 10px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+
+}
+
+.container .content-tour{
+   
+    background-color: #000;
+    min-height: 400px;
+    color: white;
+    
+    padding: 64px 0px;
+}
+.container .content-tour .tour{
+    width: 800px;
+    margin: 0px auto;
+}
+ 
+.container .content-tour .heading,
+.container .content-tour .sub-heading{
+    text-align: center;
+}
+
+.container .content-tour .sold-ticket{
+    list-style: none;
+    background-color: white;
+    color: black;
+    
+
+}
+ .content-tour .sold-ticket li{
+     position: relative;
+     border-bottom:1px solid rgba(0,0,0,0.2) ;
+     padding: 12px;
+     opacity: 0.8;
+ }
+ .content-tour .sold-out{
+     background-color: #f44336;
+     margin: 20px;
+     padding: 2px 8px;
+     color: white;
+ }
+ .content-tour .number-ticket{
+     position: absolute;
+     right: 0px;
+     display: inline-block;
+     line-height: 24px;
+     background-color: #000;
+     color: white;
+     border-radius: 50%;
+    width: 24px;
+    text-align: center;
+    margin-right: 24px;
+ }
+ .content-tour .show-tour{
+     margin-top: 24px;
+     display: flex;
+     justify-content: space-between;
+
+     
+ }
+ .show-tour .address-city img{
+     width: 100%;
+ }
+ .show-tour .address-city img:hover{
+     opacity: 0.6;
+ }
+
+ .content-tour .show-tour .address-city{
+    
+     width: calc(96%/3);
+     background-color: white;
+     color: black;
+ }
+ .show-tour .address-city .text,
+ .show-tour .address-city .buy-ticket{
+     padding-left: 18px;
+     padding-right: 16px;
+ }
+ .show-tour .text .name-city,
+ .show-tour .text .time,
+ .show-tour .text .describec{
+     margin: 15px 0px;
+ }
+ .show-tour .text .time{
+     opacity: 0.6;
+ }
+ .show-tour  .buy-ticket{
+     background-color: black;
+     border: none;
+     padding: 8px 12px;
+     color: white;
+     margin: 18px;
+ }
+ .show-tour  .buy-ticket:hover{
+     background-color: #ccc;
+     color: black;
+ }
+.container .contact{
+    width: 800px;
+    min-height: 400px;
+    margin:0px auto;
+    padding: 64px 16px;
+    /* text-align: center; */
+    
+}
+.container .contact .heading,
+.container .contact .sub-heading{
+    text-align: center;
+}
+.container .contact .information-contact{
+    display: flex;
+    
+    font-size: 18px;
+    justify-content: space-between;
+    
+}
+
+.container .contact .address-contact,
+.container .contact .your-infor{
+    list-style: none;
+
+}
+.contact .address-contact .icon{
+    padding: 0px 8px;
+}
+.container .contact .your-infor input{
+    
+    padding: 8px;
+    margin-bottom: 16px;
+}
+.container .contact .your-infor .your-message{
+    width: 100%;
+}
+.contact .send{
+    text-align: right;
+}
+.contact .send .button-send{
+    padding: 11px 14px;
+    border: none;
+    background-color: #000;
+    color: white;
+
+}
+.contact .send .button-send:hover{
+    background-color: #ccc;
+    color: black;
+}
+.container .img-map img{
+    width: 100%;
+    display: block;
+    
+}
+ .footer{
+    background-color: rgba(0,0,0,0.1);
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.6;
+    
+}
+.footer .heading{
+    margin-bottom: 16px;
+
+  
+}
+.footer .heading .icon:hover{
+    opacity: 0.8;
+}
+.book-ticket{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.2);
+}
+.book-ticket .modal{
+
+    background-color: #fff;
+  width: 600px;
+    margin: auto;
+    padding-bottom: 64px;
+    
+}
+.book-ticket .modal .header-modal{
+    padding: 32px 16px;
+    position: relative;
+    background-color: #009688;
+    text-align: center;
+    color: white;
+   
+
+
+}
+.book-ticket .modal .header-modal h1{
+    font-weight: 200px;
+    letter-spacing: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.book-ticket .modal .header-modal .click-close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 12px
+}
+.book-ticket .modal .header-modal .click-close:hover{
+    background-color:#ccc;
+}
+.book-ticket .body-modal{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+   
+}
+.book-ticket .body-element{
+    padding: 8px;
+    margin: 8px 0px;
+}
+.book-ticket .pay{
+    background-color: turquoise;
+    padding: 16px;
+    border: none;
+}
+.book-ticket .pay:hover{
+    background-color: #ccc;
+    color: black;
+}
+.footer-modal{
+    text-align: right;
+    padding-right: 16px;
+}
+.footer-modal a{
+    color: cyan;
+}
+.turn-on-off{
+    display: flex;
+}
+ 
+
+
+
+
+
+ 
