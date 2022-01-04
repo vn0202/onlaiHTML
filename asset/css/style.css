@@ -310,11 +310,16 @@
     background-color: rgba(0,0,0,0.2);
 }
 .book-ticket .modal{
-
+position: relative;
     background-color: #fff;
   width: 600px;
     margin: auto;
     padding-bottom: 64px;
+animation-name: effect;
+animation-duration: 0.7s;
+animation-iteration-count: 1;
+
+animation-timing-function: ease;
     
 }
 .book-ticket .modal .header-modal{
@@ -370,9 +375,14 @@
 .turn-on-off{
     display: flex;
 }
- 
-
-
+ @keyframes effect {
+     from{
+         bottom: 100px;
+     }
+     to{
+         bottom: 0px;
+     }
+ }
 
 
 
