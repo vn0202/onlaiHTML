@@ -118,7 +118,7 @@
 }
 .container .describe{
     text-align: justify;
-    line-height: 18px;
+    line-height: 1.4;
 }
 .container .about .img-members{
     display: flex;
@@ -320,7 +320,7 @@ animation-duration: 0.7s;
 animation-iteration-count: 1;
 
 animation-timing-function: ease;
-    
+    animation-play-state: running;
 }
 .book-ticket .modal .header-modal{
     padding: 32px 16px;
