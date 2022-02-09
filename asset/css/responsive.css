@@ -10,6 +10,18 @@
     .content-tour .tour{
         padding: 0 16px;
     }
+    #nav_mobie{
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        top: 0px;
+        right: 0;
+        left: 0;
+        background-color: #000;
+        
+        /* min-height: 350px; */
+        
+    }
 }
 /* Mobie */
 @media screen and (max-width:739px)

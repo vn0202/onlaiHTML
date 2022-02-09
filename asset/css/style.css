@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .header{
     position: fixed;
@@ -91,10 +92,10 @@
 .header .search:hover{
     background-color: tomato;
 }
-#hide-menu:checked ~ .nav{
+#nav_mobie{
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    display: block;
+   
     top: 0px;
     right: 0;
     left: 0;

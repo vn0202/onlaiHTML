@@ -56,5 +56,30 @@ const app= {
 
 }
 app.handleSlider();
+var btnMenu = document.querySelector('.ti-menu');
+btnMenu.onclick = function(){
+    if(nav_mobie.style.display==='none')
+    {
+    nav_mobie.style.display='flex';
+    }else{
+        nav_mobie.style.display='none';
+    }
+}
+var homePc= document.querySelector('.home-pc');
+console.log([homePc])
+var nav_mobie= document.getElementById('nav_mobie');
+// console.log([inputTurnHeader])
+var navSections= document.querySelectorAll('.nav_section');
+// console.log(navSections)
+  navSections.forEach(function(nav_section){
+      nav_section.onclick = function(){
+          
+   nav_mobie.style.display='none';
 
+          
+  
+      }
+     
+      
 
+  })
