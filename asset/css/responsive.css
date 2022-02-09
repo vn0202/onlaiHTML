@@ -1,0 +1,42 @@
+/* Mobie and tablet */
+@media screen and (max-width:1023px){
+
+    .hide-on-mobie{
+        display: none;
+    }
+    .unhide-on-mobie{
+        display: block;
+    }
+    .content-tour .tour{
+        padding: 0 16px;
+    }
+}
+/* Mobie */
+@media screen and (max-width:739px)
+{
+    .content-tour .show-tour{
+        flex-direction: column;
+    }
+    .content-tour .show-tour .address-city{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+.container .contact .information-contact{
+    flex-direction: column;
+}
+.container .contact .your-infor input{
+    margin-top: 16px;
+    width: 100%;
+}
+
+}
+/* tablet */
+@media screen and (min-width:740px ) and (max-width:1023px){
+  
+}
+/* Pc */
+@media screen and (min-width:1024px){
+    .home-pc{
+        display: none;
+    }
+}
